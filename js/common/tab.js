@@ -8,5 +8,6 @@ $.fn.tab = function(f, t) {
             fs.removeClass('active');
             fs.eq(index).addClass('active');
         });
-    })
+    });
+    return this;
 };

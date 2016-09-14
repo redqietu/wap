@@ -13,7 +13,7 @@
                     flip.off(EVENTTYPE.TAP);
                 });
             }, 1000);
-        }, 2000);
+        }, 1000);
     });
     _lottery.on('touchstart', function() {
         _container.addClass('hover');

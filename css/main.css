@@ -39,10 +39,57 @@ body {
 /*prizeEnd*/
 
 
+/*lipinzhongxin*/
+
+.lipinzhongxin .bk {
+    background-image: url(/images/lipinzhongxin.png);
+    height: 2.29rem;
+    margin-top: .31rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.lipinzhongxin .swiper-container {
+    height: 1.45rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.lipinzhongxin p {
+    color: #fff;
+    font-size: 0.14rem;
+    padding-top: .18rem;
+}
+
+.lipinzhongxin .sales {
+    color: #fff;
+    background-color: #3f9e0b;
+    margin-left: 0.2rem;
+}
+
+.lipinzhongxin .swiper-slide {
+    height: 1.45rem;
+    width: 3.55rem;
+    text-align: center;
+}
+
+.lipinzhongxin .swiper-slide img {
+    width: auto;
+    height: 0.9rem;
+    max-height: 0.9rem;
+    max-width: 3.55rem;
+}
+
+
+/*lipinzhongxinEnd*/
+
+
 /*lottery*/
 
 .lottery {
-    height: 11.53rem;
     margin-top: 0.46rem;
 }
 
@@ -74,8 +121,12 @@ body {
 
 .lottery .dajiang {
     position: absolute;
+    background-size: cover;
+    -webkit-transition-property: top, left;
     transition-property: top, left;
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     width: 2.21rem;
     height: 1.57rem;
@@ -89,31 +140,35 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-size: contain;
+    background-size: cover;
 }
 
 .beijing .img1 {
     top: 0.1rem;
     left: 0.12rem;
+    -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
 
 .beijing .img2 {
     top: 0.1rem;
     left: 2.45rem;
-    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.18s;
+    transition-delay: 0.18s;
 }
 
 .beijing .img3 {
     top: 0.1rem;
     left: 4.77rem;
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.26s;
+    transition-delay: 0.26s;
 }
 
 .beijing .img4 {
     top: 1.72rem;
     left: 0.12rem;
-    transition-delay: 0.4s;
+    -webkit-transition-delay: 0.14s;
+    transition-delay: 0.14s;
 }
 
 .beijing .dajiang.img {
@@ -125,25 +180,27 @@ body {
 .beijing .img5 {
     top: 1.72rem;
     left: 4.77rem;
-    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.22s;
+    transition-delay: 0.22s;
 }
 
 .beijing .img6 {
     top: 3.45rem;
     left: 0.12rem;
-    transition-delay: 0.6s;
+    -webkit-transition-delay: 0.36s;
+    transition-delay: 0.36s;
 }
 
 .beijing .img7 {
     top: 3.45rem;
     left: 2.45rem;
-    transition-delay: 0.7s;
+    -webkit-transition-delay: 0.32s;
+    transition-delay: 0.32s;
 }
 
 .beijing .img8 {
     top: 3.45rem;
     left: 4.77rem;
-    transition-delay: 0.8s;
 }
 
 .lottery>img {
@@ -189,27 +246,34 @@ div.lottery .wrapper.over .dajiang.img {
 }
 
 .lottery .flip div {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 .lottery .wrapper.current .flip div {
+    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .lottery .flip {
+    -webkit-perspective: 7.5rem;
     perspective: 7.5rem;
 }
 
 .lottery .flip .back {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .lottery .flip.bingo .front {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .lottery .flip.bingo .back {
+    -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 
@@ -457,8 +521,8 @@ div.lottery .wrapper.over .dajiang.img {
 .buycar .number {
     width: 100%;
     height: 0.41rem;
-    font-size: 0.32rem;
-    line-height: 0.32rem;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
     text-align: center;
     padding-top: 0.2rem;
 }
@@ -652,9 +716,10 @@ div.lottery .wrapper.over .dajiang.img {
 }
 
 .yimaojia .span2 {
-    position: absolute;
+    float: right;
+    position: relative;
+    left: 0;
     top: 0;
-    right: 0;
 }
 
 
@@ -724,7 +789,7 @@ div.lottery .wrapper.over .dajiang.img {
     bottom: 0.6rem;
 }
 
-.xinwen .item>div {
+.xinwen .item .title {
     width: 100%;
     height: 0.52rem;
     position: absolute;
@@ -881,11 +946,30 @@ form .item.error .msg {
 
 .pop .wrapper {
     width: 5.48rem;
+    max-height: 7rem;
     position: fixed;
-    top: 2.67rem;
-    left: 1.01rem;
+    top: 50%;
+    margin-top: -3.5rem;
+    left: 50%;
+    margin-left: -2.74rem;
     background-color: #fff;
     border-radius: 0.02rem;
+}
+
+.pop .pop-content {
+    max-height: 5.2rem;
+}
+
+.pop .pop-header {
+    height: .76rem;
+}
+
+.pop .pop-footer {
+    width: 100%;
+}
+
+.pop .pop-content .swiper-slide {
+    height: auto;
 }
 
 .pop .footer {
@@ -895,7 +979,6 @@ form .item.error .msg {
 }
 
 .pop .title {
-    margin-top: 0.87rem;
     font-size: 0.3rem;
 }
 
@@ -1000,10 +1083,6 @@ form .item.error .msg {
 
 .poplipinguize {
     font-size: 0.03rem;
-}
-
-.pop .jiangpinmingxi {
-    margin-top: 1rem;
 }
 
 .poplipinguize .jiangpinmingxiitem {
@@ -1139,6 +1218,10 @@ form select {
     margin: 0 auto;
 }
 
+.logos .active .logoname {
+    background-color: #fdb247;
+}
+
 .logos ul {
     border: 0.05rem solid #000;
     overflow: hidden;
@@ -1163,7 +1246,7 @@ form select {
     height: 0.36rem;
     font-size: 0.2rem;
     text-align: center;
-    line-height: 0.2rem;
+    line-height: 0.36rem;
     background-color: #fff;
 }
 
@@ -1173,3 +1256,43 @@ form select {
 
 
 /*logosEnd*/
+
+
+/*luckyhuman*/
+
+.luckyhuman .pwrapper {
+    background-color: #181f27;
+    margin-top: .17rem;
+    text-align: center;
+    line-height: .63rem;
+}
+
+.luckyhuman .zhongjiangmingdan {
+    width: 1.2rem;
+    border-right: 0.01rem dotted #242d37;
+    color: #fdb247;
+    float: left;
+    font-size: 0.21rem;
+}
+
+.luckyhuman .yincang {
+    color: #fdb247;
+}
+
+.luckyhuman .zhongjiangxinxi {
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+.jiang {
+    height: .63rem;
+}
+
+.luckyhuman .zhongjiangxinxi {
+    width: 5.8rem;
+    height: .63rem;
+    float: right;
+}
+
+
+/*luckyhumanEnd*/

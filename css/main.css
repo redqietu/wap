@@ -3,15 +3,190 @@
     width: 750px;
 }
 
+.desktop .pcontainer {
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
 .bk {
     background-image: url(../images/bk.png);
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
 .header {
     background-image: url('../images/header.png');
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     height: 4.47rem;
+    width: 7.5rem;
+}
+
+.weixin {
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.header .emaologo {
+    position: absolute;
+    left: .19rem;
+    top: .14rem;
+    width: 2.58rem;
+    height: .59rem;
+    background-image: url(../images/emaologo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header .large-ballon {
+    position: absolute;
+    right: .02rem;
+    top: .58rem;
+    width: .58rem;
+    height: .58rem;
+    background-repeat: no-repeat;
+    background-image: url(../images/large-ballon.png);
+    background-size: contain;
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes balloon1 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(-3deg);
+        transform: translateY(0) rotate(-3deg);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(5deg);
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@-o-keyframes balloon1 {
+    0%,
+    100% {
+        -o-transform: translateY(0) rotate(-3deg);
+        transform: translateY(0) rotate(-3deg);
+        opacity: 0.7;
+    }
+    50% {
+        -o-transform: translateY(-20px) rotate(5deg);
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@-moz-keyframes balloon1 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(-3deg);
+        -o-transform: translateY(0) rotate(-3deg);
+        -moz-transform: translateY(0) rotate(-3deg);
+        transform: translateY(0) rotate(-3deg);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(5deg);
+        -o-transform: translateY(-20px) rotate(5deg);
+        -moz-transform: translateY(-20px) rotate(5deg);
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes balloon1 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(-3deg);
+        -o-transform: translateY(0) rotate(-3deg);
+        -moz-transform: translateY(0) rotate(-3deg);
+        transform: translateY(0) rotate(-3deg);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(5deg);
+        -o-transform: translateY(-20px) rotate(5deg);
+        -moz-transform: translateY(-20px) rotate(5deg);
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@-webkit-keyframes balloon2 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(3deg);
+        transform: translateY(0) rotate(3deg);
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(-5deg);
+        transform: translateY(-30px) rotate(-5deg);
+    }
+}
+
+@-o-keyframes balloon2 {
+    0%,
+    100% {
+        -o-transform: translateY(0) rotate(3deg);
+        transform: translateY(0) rotate(3deg);
+    }
+    50% {
+        -o-transform: translateY(-30px) rotate(-5deg);
+        transform: translateY(-30px) rotate(-5deg);
+    }
+}
+
+@-moz-keyframes balloon2 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(3deg);
+        -o-transform: translateY(0) rotate(3deg);
+        -moz-transform: translateY(0) rotate(3deg);
+        transform: translateY(0) rotate(3deg);
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(-5deg);
+        -o-transform: translateY(-30px) rotate(-5deg);
+        -moz-transform: translateY(-30px) rotate(-5deg);
+        transform: translateY(-30px) rotate(-5deg);
+    }
+}
+
+@keyframes balloon2 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(3deg);
+        -o-transform: translateY(0) rotate(3deg);
+        -moz-transform: translateY(0) rotate(3deg);
+        transform: translateY(0) rotate(3deg);
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(-5deg);
+        -o-transform: translateY(-30px) rotate(-5deg);
+        -moz-transform: translateY(-30px) rotate(-5deg);
+        transform: translateY(-30px) rotate(-5deg);
+    }
+}
+
+.header .small-ballon {
+    position: absolute;
+    right: .54rem;
+    top: 1rem;
+    width: .38rem;
+    height: .38rem;
+    background-repeat: no-repeat;
+    background-image: url(../images/small-ballon.png);
+    background-size: contain;
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
 }
 
 body {
@@ -27,8 +202,10 @@ body {
     height: 1.71rem;
 }
 
-.prize div {
+.prize .pwrapper .posa {
     background-image: url('../images/prize.png');
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     width: 100%;
     height: 1.25rem;
@@ -42,12 +219,22 @@ body {
 /*lipinzhongxin*/
 
 .lipinzhongxin .bk {
-    background-image: url(/images/lipinzhongxin.png);
+    background-image: url(../images/lipinzhongxin.png);
     height: 2.29rem;
     margin-top: .31rem;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.lipinwrapper .zuobiaoxi {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .lipinzhongxin .swiper-container {
@@ -67,7 +254,7 @@ body {
 .lipinzhongxin .sales {
     color: #fff;
     background-color: #3f9e0b;
-    margin-left: 0.2rem;
+    margin-left: 0.02rem;
 }
 
 .lipinzhongxin .swiper-slide {
@@ -103,6 +290,8 @@ body {
     background-image: url('../images/goucheyoulititle.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -121,15 +310,25 @@ body {
 
 .lottery .dajiang {
     position: absolute;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     -webkit-transition-property: top, left;
+    -o-transition-property: top, left;
+    -moz-transition-property: top, left;
     transition-property: top, left;
     -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
     -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     width: 2.21rem;
     height: 1.57rem;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     z-index: 5;
 }
@@ -140,6 +339,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -147,6 +348,8 @@ body {
     top: 0.1rem;
     left: 0.12rem;
     -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
 
@@ -154,6 +357,8 @@ body {
     top: 0.1rem;
     left: 2.45rem;
     -webkit-transition-delay: 0.18s;
+    -o-transition-delay: 0.18s;
+    -moz-transition-delay: 0.18s;
     transition-delay: 0.18s;
 }
 
@@ -161,6 +366,8 @@ body {
     top: 0.1rem;
     left: 4.77rem;
     -webkit-transition-delay: 0.26s;
+    -o-transition-delay: 0.26s;
+    -moz-transition-delay: 0.26s;
     transition-delay: 0.26s;
 }
 
@@ -168,6 +375,8 @@ body {
     top: 1.72rem;
     left: 0.12rem;
     -webkit-transition-delay: 0.14s;
+    -o-transition-delay: 0.14s;
+    -moz-transition-delay: 0.14s;
     transition-delay: 0.14s;
 }
 
@@ -181,6 +390,8 @@ body {
     top: 1.72rem;
     left: 4.77rem;
     -webkit-transition-delay: 0.22s;
+    -o-transition-delay: 0.22s;
+    -moz-transition-delay: 0.22s;
     transition-delay: 0.22s;
 }
 
@@ -188,6 +399,8 @@ body {
     top: 3.45rem;
     left: 0.12rem;
     -webkit-transition-delay: 0.36s;
+    -o-transition-delay: 0.36s;
+    -moz-transition-delay: 0.36s;
     transition-delay: 0.36s;
 }
 
@@ -195,6 +408,8 @@ body {
     top: 3.45rem;
     left: 2.45rem;
     -webkit-transition-delay: 0.32s;
+    -o-transition-delay: 0.32s;
+    -moz-transition-delay: 0.32s;
     transition-delay: 0.32s;
 }
 
@@ -228,7 +443,9 @@ body {
 
 div.lottery .wrapper .dajiang.img {
     background-image: url(../images/dajiang.png)!important;
-    backgroun-size: cover;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -247,33 +464,41 @@ div.lottery .wrapper.over .dajiang.img {
 
 .lottery .flip div {
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 .lottery .wrapper.current .flip div {
     -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .lottery .flip {
     -webkit-perspective: 7.5rem;
+    -moz-perspective: 7.5rem;
     perspective: 7.5rem;
 }
 
 .lottery .flip .back {
     -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .lottery .flip.bingo .front {
     -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .lottery .flip.bingo .back {
     -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 
@@ -315,8 +540,10 @@ div.lottery .wrapper.over .dajiang.img {
     height: 3.4rem;
 }
 
-.gift div {
+.gift .posa {
     background-image: url('../images/goucheyouli.png');
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     width: 100%;
     height: 2.58rem;
@@ -333,9 +560,11 @@ div.lottery .wrapper.over .dajiang.img {
     height: 2.03rem;
 }
 
-.hot div {
+.hot .posa {
     background-image: url('../images/hot.png');
-    background-size: 100% 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 1.62rem;
     top: 0.24rem;
@@ -347,8 +576,8 @@ div.lottery .wrapper.over .dajiang.img {
 
 /*cityNav*/
 
-.city-nav {
-    /*margin-top: 0.28rem;*/
+.nav .pwrapper {
+    width: 7.5rem;
 }
 
 .city-nav ul {
@@ -364,6 +593,8 @@ div.lottery .wrapper.over .dajiang.img {
     line-height: 0.71rem;
     font-size: 0.328125rem;
     color: #fff;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -371,6 +602,8 @@ div.lottery .wrapper.over .dajiang.img {
 .city-nav li.active {
     background-color: #fdb247;
     background-image: none!important;
+    -webkit-border-radius: 0.034rem;
+    -moz-border-radius: 0.034rem;
     border-radius: 0.034rem;
 }
 
@@ -379,6 +612,10 @@ div.lottery .wrapper.over .dajiang.img {
 
 
 /*.buycar*/
+
+.windows .pwrapper {
+    width: 7.5rem;
+}
 
 .buycar {
     margin: 0 0.02rem;
@@ -391,6 +628,11 @@ div.lottery .wrapper.over .dajiang.img {
 
 .windows .win.active {
     display: block;
+}
+
+.win .car {
+    height: 1.79rem;
+    overflow: hidden;
 }
 
 .buycar li,
@@ -422,6 +664,8 @@ div.lottery .wrapper.over .dajiang.img {
     top: 0;
     width: 0.54rem;
     height: 0.64rem;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -440,40 +684,77 @@ div.lottery .wrapper.over .dajiang.img {
 }
 
 .ads .span1 {
-    width: 1.62rem;
+    position: absolute;
+    left: 0.6rem;
+    top: .1rem;
+    width: 1.5rem;
+    height: 0.2rem;
+    -webkit-border-radius: .20rem;
+    -moz-border-radius: .20rem;
     border-radius: .20rem;
     border: 0.01rem solid #d1e8c5;
     font-weight: bold;
     padding: 0 .12rem;
-    font-size: 0.2rem;
+    font-size: 0.172rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ads .span2 {
-    width: 1.27rem;
+    position: absolute;
+    left: 2.2rem;
+    top: .1rem;
+    width: 1.1rem;
+    height: 0.2rem;
+    -webkit-border-radius: .20rem;
+    -moz-border-radius: .20rem;
     border-radius: .20rem;
     border: 0.01rem solid #55a0e3;
     font-weight: bold;
     padding: 0 .12rem;
     font-size: 0.172rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ads .span3 {
+    position: absolute;
+    left: 0.5rem;
+    top: .3rem;
+    width: 2.9rem;
+    height: 0.3rem;
     font-weight: bold;
     color: #ff8e8e;
     padding: 0 0.1rem;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .buycar .car img {
-    width: 100%;
+    width: auto;
     height: auto;
+}
+
+.buycar .car {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .buycar .name {
     height: 0.67rem;
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
     line-height: 0.67rem;
-    font-size: 0.45325rem;
+    font-size: 0.3rem;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .buycar .price {
@@ -505,6 +786,8 @@ div.lottery .wrapper.over .dajiang.img {
     width: 100%;
     height: 0.59rem;
     text-align: center;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 46% 50%;
@@ -558,16 +841,17 @@ div.lottery .wrapper.over .dajiang.img {
 }
 
 .fenye .page li {
+    /* display: inline-block; */
     float: left;
-    width: 0.54rem;
+    /* width: 0.54rem; */
     height: 0.56rem;
     background-color: #fff;
     margin: 0 0.07rem;
 }
 
-.fenye .page .prev,
-.fenye .page .next {
-    width: 1.12rem;
+.fenye .page .prevs,
+.fenye .page .nexts {
+    width: 1rem;
     height: 0.56rem;
     color: #1e2934;
     background-color: #fff;
@@ -581,9 +865,9 @@ div.lottery .wrapper.over .dajiang.img {
 }
 
 .fenye .page li>a {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
+    width: .5rem;
+    /* height: .3rem; */
+    display: block;
 }
 
 
@@ -596,6 +880,8 @@ div.lottery .wrapper.over .dajiang.img {
     height: 1.05rem;
     background-image: url(../images/yuehuimaiche.png);
     background-position: 50% 50%;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 0.48rem;
@@ -621,6 +907,8 @@ div.lottery .wrapper.over .dajiang.img {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -641,6 +929,8 @@ div.lottery .wrapper.over .dajiang.img {
     background-image: url(../images/down2.png);
     background-repeat: no-repeat;
     background-position: 0.13rem 0.23rem;
+    -moz-background-size: 0.15rem;
+    -webkit-background-size: 0.15rem 0.15rem;
     background-size: 0.15rem;
 }
 
@@ -732,6 +1022,8 @@ div.lottery .wrapper.over .dajiang.img {
     height: 3.52rem;
     background-image: url(../images/goucheliucheng.png);
     background-repeat: no-repeat;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
     background-size: contain;
     background-position: 50% 50%;
 }
@@ -743,6 +1035,8 @@ div.lottery .wrapper.over .dajiang.img {
     height: 1.72rem;
     background-image: url(../images/maicheji.png);
     background-repeat: no-repeat;
+    -moz-background-size: 3.11rem;
+    -webkit-background-size: 3.11rem 3.11rem;
     background-size: 3.11rem;
     background-position: 50% 50%;
 }
@@ -830,13 +1124,23 @@ div.lottery .wrapper.over .dajiang.img {
 
 .form {
     font-size: 0.2345rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.41rem;
+}
+
+.b-copyright {
+    font-size: 0.2rem;
+    text-align: center;
+    color: #fff;
 }
 
 .form .kouhao {
     text-align: center;
     font-size: 0.4rem;
     color: #fff;
+}
+
+.b-copyright p {
+    margin: 0.1rem auto;
 }
 
 .kouhao .span1 {
@@ -945,14 +1249,16 @@ form .item.error .msg {
 }
 
 .pop .wrapper {
-    width: 5.48rem;
+    width: 6rem;
     max-height: 7rem;
     position: fixed;
     top: 50%;
     margin-top: -3.5rem;
     left: 50%;
-    margin-left: -2.74rem;
+    margin-left: -3rem;
     background-color: #fff;
+    -webkit-border-radius: 0.02rem;
+    -moz-border-radius: 0.02rem;
     border-radius: 0.02rem;
 }
 
@@ -1003,6 +1309,8 @@ form .item.error .msg {
     position: absolute;
     top: -0.89rem;
     left: 1.81rem;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1013,6 +1321,8 @@ form .item.error .msg {
     position: absolute;
     top: -0.89rem;
     left: 1.81rem;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1023,6 +1333,8 @@ form .item.error .msg {
     position: absolute;
     top: -0.89rem;
     left: 1.81rem;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1067,6 +1379,8 @@ form .item.error .msg {
     position: absolute;
     top: -0.89rem;
     left: 1.81rem;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1078,6 +1392,8 @@ form .item.error .msg {
     right: 0.2rem;
     background-image: url(../images/close.png);
     background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1106,6 +1422,8 @@ form .item.error .msg {
     height: 0.28rem;
     background-image: url(../images/red.png);
     display: inline-block;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -1113,6 +1431,8 @@ form .item.error .msg {
     width: 4.18rem;
     height: 3.98rem;
     background-image: url(../images/zhuazhumaolaoda.png);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     margin: 0 auto;
     position: relative;
@@ -1296,3 +1616,18 @@ form select {
 
 
 /*luckyhumanEnd*/
+
+
+/*chakanguize*/
+
+.chakanguize {
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.24rem;
+    text-decoration: underline;
+    color: #fdb247;
+}
+
+
+/*chakanguizeEnd*/

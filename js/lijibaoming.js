@@ -8,7 +8,11 @@ $.fn.lijibaoming = function() {
 
         $baoming.popShow();
         $baoming.find('.js-location').val(location);
-        $baoming.find('.js-chexi').val(chexi);
         $baoming.find('.js-pinpai').val(pinpai);
+        setTimeout(function() {
+
+            $baoming.find('.js-pinpai').trigger('change');
+            $baoming.find('.js-chexi').val(chexi);
+        }, 0);
     });
 };
